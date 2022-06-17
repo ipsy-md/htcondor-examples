@@ -1,0 +1,17 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_cpus   = 1
+request_memory = 1G
+
+# Execution
+initial_dir    = $ENV(HOME)
+executable     = /usr/bin/python3
+
+# Job
+arguments      = $ENV(HOME)/htcondor_example/Execute_a_Python_script/02/my_test.py
+log            = $ENV(HOME)/htcondor_example/logs/test_$(Cluster).$(Process).log
+output         = $ENV(HOME)/htcondor_example/logs/test_$(Cluster).$(Process).out
+error          = $ENV(HOME)/htcondor_example/logs/test_$(Cluster).$(Process).err
+Queue
+

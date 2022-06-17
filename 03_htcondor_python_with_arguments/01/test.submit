@@ -1,0 +1,28 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_cpus   = 1
+request_memory = 1G
+
+# Execution
+initial_dir    = $ENV(HOME)
+executable     = $ENV(HOME)/htcondor_examples/03_htcondor_python_with_arguments/01/example.py
+
+# Logs
+log            = $ENV(HOME)/htcondor_examples/logs/test_$(Cluster).$(Process).log
+output         = $ENV(HOME)/htcondor_examples/logs/test_$(Cluster).$(Process).out
+error          = $ENV(HOME)/htcondor_examples/logs/test_$(Cluster).$(Process).err
+
+# Jobs
+arguments      = "--subject 1"
+Queue
+
+arguments      = "--subject 2"
+Queue
+
+# if you want the subject number encoded in the log files you can add that also
+#log            = $ENV(HOME)/htcondor_examples/logs/test_$(Cluster).$(Process)_subject_1.log
+#output         = $ENV(HOME)/htcondor_examples/logs/test_$(Cluster).$(Process)_subject_1.out
+#error          = $ENV(HOME)/htcondor_examples/logs/test_$(Cluster).$(Process)_subject_1.err
+#arguments      = "--subject 1"
+#Queue

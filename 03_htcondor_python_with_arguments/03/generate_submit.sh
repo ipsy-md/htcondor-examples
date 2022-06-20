@@ -1,7 +1,7 @@
 #!/bin/sh
 # v3.0
 
-logs_dir=~/htcondor_examples/logs
+logs_dir=~/htcondor-examples/logs
 # create the logs dir if it doesn't exist
 [ ! -d "$logs_dir" ] && mkdir -p "$logs_dir"
 

@@ -6,7 +6,7 @@ request_memory = 1G
 
 # Execution
 initial_dir    = $ENV(HOME)
-executable     = $ENV/HOME)/htcondor-examples/04_generalized_wrapper_script/wrapper_script.sh
+executable     = $ENV(HOME)/htcondor-examples/04_generalized_wrapper_script/wrapper_script.sh
 
 # Job
 arguments      = ~/htcondor-examples/04_generalized_wrapper_script/example.py --subject 01

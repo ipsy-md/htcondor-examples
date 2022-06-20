@@ -63,7 +63,7 @@ use wrapper script instead of calling the python script directly
 
 run with
 ```
-./test_with_arguments_and_wrapper_submit_gen.sh | condor_submit
+./generate_submit.sh | condor_submit
 ```
 
 ## Generalized wrapper script

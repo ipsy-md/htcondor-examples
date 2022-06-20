@@ -6,11 +6,11 @@ request_memory = 1G
 
 # Execution
 initial_dir    = $ENV(HOME)
-executable     = /home/makuhn/htcondor_test_job/wrapper_script.sh
+executable     = $ENV/HOME)/htcondor-examples/04_generalized_wrapper_script/wrapper_script.sh
 
 # Job
-arguments      = ~/htcondor_examples/04_generalized_wrapper_script/example.py --subject 01
-log            = $ENV(HOME)/htcondor_test_job/logs/test_$(Cluster).$(Process).log
-output         = $ENV(HOME)/htcondor_test_job/logs/test_$(Cluster).$(Process).out
-error          = $ENV(HOME)/htcondor_test_job/logs/test_$(Cluster).$(Process).err
+arguments      = ~/htcondor-examples/04_generalized_wrapper_script/example.py --subject 01
+log            = $ENV(HOME)/htcondor-examples/logs/test_$(Cluster).$(Process).log
+output         = $ENV(HOME)/htcondor-examples/logs/test_$(Cluster).$(Process).out
+error          = $ENV(HOME)/htcondor-examples/logs/test_$(Cluster).$(Process).err
 Queue

@@ -6,10 +6,10 @@ request_memory = 1G
 
 # Execution
 initial_dir    = $ENV(HOME)
-executable     = $ENV(HOME)/htcondor_examples/Execute_a_Python_script/01/my_test.py
+executable     = my_test.py
 
 # Job
-log            = $ENV(HOME)/htcondor_examples/logs/test_$(Cluster).$(Process).log
-output         = $ENV(HOME)/htcondor_examples/logs/test_$(Cluster).$(Process).out
-error          = $ENV(HOME)/htcondor_examples/logs/test_$(Cluster).$(Process).err
+log            = $ENV(HOME)/htcondor-examples/logs/test_$(Cluster).$(Process).log
+output         = $ENV(HOME)/htcondor-examples/logs/test_$(Cluster).$(Process).out
+error          = $ENV(HOME)/htcondor-examples/logs/test_$(Cluster).$(Process).err
 Queue

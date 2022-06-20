@@ -14,7 +14,7 @@ request_memory = 1G
 
 # Execution
 initial_dir    = \$ENV(HOME)
-executable     = \$ENV(HOME)/htcondor_examples/with_arguments/wrapper_script2.sh
+executable     = \$ENV(HOME)/htcondor_examples/with_arguments/wrapper_script.sh
 \n"
 
 # create a job for each subject file

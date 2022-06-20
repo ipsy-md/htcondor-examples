@@ -1,11 +1,10 @@
-import click
+import argparse
 
-@click.command()
-@click.option('--subject', type=int, required=True, help='The subject number to process.')
-def main(subject):
-    """Run my analsis."""
+#parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description='Run my analysis.')
+# type checks that the input type is correct and converts it to int, otherwise it is a string
+# requires makes the subject argument mandatory, otherwise it can be script and is set to None by default
+parser.add_argument('--subject', type=int, required=True, help='The subject number to process')
+args = parser.parse_args()
 
-    print("This processes subject number", subject)
-
-if __name__ == '__main__':
-    main()
+print("This processes subject number", args.subject)

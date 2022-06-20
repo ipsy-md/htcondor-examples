@@ -9,9 +9,9 @@ initial_dir    = $ENV(HOME)
 executable     = /usr/bin/python3
 
 # Job
-arguments      = $ENV(HOME)/htcondor_example/Execute_a_Python_script/02/my_test.py
-log            = $ENV(HOME)/htcondor_example/logs/test_$(Cluster).$(Process).log
-output         = $ENV(HOME)/htcondor_example/logs/test_$(Cluster).$(Process).out
-error          = $ENV(HOME)/htcondor_example/logs/test_$(Cluster).$(Process).err
+arguments      = $ENV(HOME)/htcondor-examples/01_htcondor_python/02/my_test.py
+log            = $ENV(HOME)/htcondor-examples/logs/test_$(Cluster).$(Process).log
+output         = $ENV(HOME)/htcondor-examples/logs/test_$(Cluster).$(Process).out
+error          = $ENV(HOME)/htcondor-examples/logs/test_$(Cluster).$(Process).err
 Queue
 

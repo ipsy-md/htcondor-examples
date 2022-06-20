@@ -1,7 +1,7 @@
 #!/bin/sh
 # v3.0
 
-logs_dir=~/htcondor_example/logs
+logs_dir=~/htcondor-examples/logs
 # create the logs dir if it doesn't exist
 [ ! -d "$logs_dir" ] && mkdir -p "$logs_dir"
 
@@ -14,7 +14,7 @@ request_memory = 1G
 
 # Execution
 initial_dir    = \$ENV(HOME)
-executable     = \$ENV(HOME)/htcondor_example/03_htcondor_python_with_arguments/02/example.py
+executable     = \$ENV(HOME)/htcondor-examples/03_htcondor_python_with_arguments/02/example.py
 \n"
 
 # create a job for each subject file
